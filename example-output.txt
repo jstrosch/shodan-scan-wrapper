@@ -1,0 +1,85 @@
+**************************************** IP Discovery and Scanning ****************************************
+
+[*] Found 2 unique domain(s)
+[?] Searching Shodan for www.bundlesbyb.com
+
+[*] Found IP for domain 45.56.101.4
+[?] Searching Shodan for bluelionconflictsolutions.com
+[*] Found IP for domain 160.153.74.197
+[*] Found 2 IP/domains
+[!] Missing 0 IP/domains
+
+**************************************** Scanning Started ****************************************
+
+[!] Scanning www.bundlesbyb.com
+
+45.56.101.4
+Hostnames:               li903-4.members.linode.com
+City:                    Newark
+Country:                 United States
+Organization:            Linode
+Updated:                 2019-12-29T06:34:41.061816
+Number of open ports:    3
+
+Ports:
+     80/tcp  
+    443/tcp  
+	|-- SSL Versions: -SSLv2, -SSLv3, -TLSv1, -TLSv1.1, -TLSv1.3, TLSv1.2
+  22222/tcp OpenSSH (7.2p2 Ubuntu-4ubuntuflywheel2.4)
+
+
+
+[!] Scanning bluelionconflictsolutions.com
+160.153.74.197
+Hostnames:               ip-160-153-74-197.ip.secureserver.net
+City:                    Scottsdale
+Country:                 United States
+Organization:            GoDaddy.com, LLC
+Updated:                 2019-12-28T23:48:55.811453
+Number of open ports:    12
+Vulnerabilities:         CVE-2011-5000	CVE-2018-19935	CVE-2017-15906	CVE-2014-1692	CVE-2010-5107	CVE-2016-10708	CVE-2010-4478	CVE-2016-0777	CVE-2011-4327	CVE-2010-4755	CVE-2012-0814	
+
+Ports:
+     21/tcp Pure-FTPd 
+	|-- SSL Versions: -SSLv2, -SSLv3, -TLSv1, TLSv1.1, TLSv1.2
+     22/tcp OpenSSH (5.3)
+     80/tcp Apache httpd 
+    110/tcp  
+	|-- SSL Versions: -SSLv2, -SSLv3, TLSv1, TLSv1.1, TLSv1.2
+    143/tcp  
+	|-- SSL Versions: -SSLv2, -SSLv3, TLSv1, TLSv1.1, TLSv1.2
+    443/tcp Apache httpd 
+	|-- SSL Versions: -SSLv2, -SSLv3, -TLSv1, -TLSv1.3, TLSv1.1, TLSv1.2
+	|-- Diffie-Hellman Parameters:
+		Bits:          2048
+		Generator:     2
+		Fingerprint:   RFC3526/Oakley Group 14
+    465/tcp Exim smtpd (4.92)
+	|-- SSL Versions: -SSLv2, -SSLv3, -TLSv1, -TLSv1.1, TLSv1.2
+    993/tcp  
+	|-- SSL Versions: -SSLv2, -SSLv3, TLSv1, TLSv1.1, TLSv1.2
+	|-- Diffie-Hellman Parameters:
+		Bits:          1024
+		Generator:     2
+    995/tcp  
+	|-- SSL Versions: -SSLv2, -SSLv3, TLSv1, TLSv1.1, TLSv1.2
+	|-- Diffie-Hellman Parameters:
+		Bits:          1024
+		Generator:     2
+   2082/tcp  
+   2083/tcp  
+	|-- SSL Versions: -SSLv2, -SSLv3, TLSv1, TLSv1.1, TLSv1.2
+	|-- Diffie-Hellman Parameters:
+		Bits:          2048
+		Generator:     2
+   3306/tcp MySQL (5.6.44-cll-lve)
+
+
+
+**************************************** Overall Results****************************************
+
+[*] IPs that were scanned
+45.56.101.4
+160.153.74.197
+
+[*] No IP was obtained from Shodan
